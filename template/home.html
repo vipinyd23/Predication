@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+{% load static %}
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="{% static 'images/diagnosis.jpeg' %}" class="d-block w-100" alt="..."> -->
+        <img src="https://source.unsplash.com/1400x500?diagnosis" class="d-block w-100 my-2" alt="...">
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <h5 class="card-header">HEART DISEASE</h5>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">The term “heart disease” refers to several types of heart conditions. 
+        The most common type of heart disease in the United States is coronary artery disease (CAD), which affects the blood flow to the heart. Decreased blood flow can cause a heart attack.</p>
+    </div>
+  </div>  <div class="card">
+    <h5 class="card-header">DIABETES</h5>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
+        Most of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. 
+        Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.</p>
+    </div>
+  </div>  <div class="card">
+    <h5 class="card-header">BREAST CANCER DISEASE </h5>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">WBreast cancer is cancer that forms in the cells of the breasts. After skin cancer, breast cancer is the most common cancer diagnosed in women in the United States.
+         Breast cancer can occur in both men and women, but it's far more common in women..</p>
+    </div>
+  </div>
+
+{% endblock body %}
+
+
+
+
+

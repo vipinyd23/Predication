@@ -1,0 +1,54 @@
+
+{% extends 'base.html' %}
+{% block title %} Login {% endblock title %} 
+{% block body %}
+
+<div class="bg-white border rounded-5">
+
+    <section class="w-100 px-4 py-5">
+      <style>
+        .divider:after,
+        .divider:before {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #eee;
+        }
+      </style>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+        <!----> 
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form method="POST" action="/login">
+              {% csrf_token %}
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="username" name="username" id="form1Example13" class="form-control form-control-lg">
+              <label class="form-label" for="form1Example13" style="margin-left: 0px;">Username</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" name="password" id="form1Example23" class="form-control form-control-lg">
+              <label class="form-label" for="form1Example23" style="margin-left: 0px;">Password</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
+
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+  </div>
+  {% endblock body %}

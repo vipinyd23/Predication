@@ -1,0 +1,76 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Heart disease {% endblock title %}
+
+{% block body %}
+
+
+<div class="container">
+<div align='center' class="main">
+    <hr>
+    <h3>WELCOME TO HEART DISEASE PREDCTION </h3><hr>
+    <!-- <P>Please enter the following information</P> -->
+    <form action="res1">
+    <table>
+        <tr> 
+            <td align="right">Age:</td>
+            <td align="left"><input type="text" name="n9"></td>
+            <td align="right">Sex:</td>
+            <td align="left"><input type="text" name="n10"></td>
+        </tr>
+        
+         <tr>
+            <td align="right">Cp:</td>
+            <td align="left"><input type="text"name="n11"></td>
+            <td align="right">trestbps:</td>
+            <td align="left"><input type="text" name="n12"></td>      
+        
+        </tr>
+         <tr>
+            <td align="right">chol:</td>
+            <td align="left"><input type="text" name="n13"></td>
+            <td align="right">fbs:</td>
+            <td align="left"><input type="text" name="n14"></td>
+        </tr>
+         
+         <tr>
+            <td align="right">Restecg:</td>
+            <td align="left"><input type="text" name="n15"></td>
+            <td align="right">thalach:</td>
+            <td align="left"><input type="text" name="n16"></td>
+        </tr>
+         
+        <tr>
+            <td align="right">Exang:</td>
+            <td align="left"><input type="text" name="n17"></td>
+            <td align="right">Oldpeak:</td>
+            <td align="left"><input type="text" name="n18"></td>
+        </tr>
+       
+        <tr>
+            <td align="right">Slope:</td>
+            <td align="left"><input type="text" name="n19"></td>
+            <td align="right">Ca:</td>
+            <td align="left"><input type="text" name="n20"></td>
+        </tr>
+        
+        <tr>
+            <td align="right" >Thal:</td>
+            <td align="left"><input type="text" name="n21"></td>
+        </tr>
+    </table>
+
+    <!-- <input type="submit"> -->
+    <button class="button"> Submit </button>
+</form>
+<hr>
+<h3 class="result">Result:{{result2}}</h3>
+<hr>
+
+</div>
+</div>
+
+
+
+{% endblock body %}

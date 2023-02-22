@@ -1,0 +1,64 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Breast cancer {% endblock title %}
+
+{% block body %}
+
+
+<div class="container">
+<div align='center' class="main">
+    <hr>
+    <h3>WELCOME TO BREAST CANCER PREDCTION </h3><hr>
+    <!-- <P>Please enter the following information</P> -->
+    <form action="res2">
+    <table>
+        <tr>
+            <td align="right">Age:</td>
+            <td align="left"><input type="text" name="n9"></td>
+            <td align="right">menopause:</td>
+            <td align="left"><input type="text" name="n10"></td>
+        </tr>
+        
+         <tr>
+            <td align="right">tumor-size:</td>
+            <td align="left"><input type="text"name="n11"></td>
+            <td align="right">inv-nodes:</td>
+            <td align="left"><input type="text" name="n12"></td>      
+        
+        </tr>
+         <tr>
+            <td align="right">node-caps:</td>
+            <td align="left"><input type="text" name="n13"></td>
+            <td align="right">deg-malig:</td>
+            <td align="left"><input type="text" name="n14"></td>
+        </tr>
+         
+         <tr>
+            <td align="right">breast:</td>
+            <td align="left"><input type="text" name="n15"></td>
+            <td align="right">breast-quad:</td>
+            <td align="left"><input type="text" name="n16"></td>
+        </tr>
+         
+        <tr>
+            <td align="right">irradiat:</td>
+            <td align="left"><input type="text" name="n17"></td>
+            <td align="right">Class:</td>
+            <td align="left"><input type="text" name="n18"></td>
+        </tr>
+       
+    </table>
+    <!-- <input type="submit"> -->
+    <button class="button"> Submit </button>
+</form>
+<hr>
+<h3 class="result">Result:{{result2}}</h3>
+<hr>
+
+</div>
+</div>
+
+
+
+{% endblock body %}

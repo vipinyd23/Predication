@@ -1,0 +1,62 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Diabetes {% endblock title %}
+
+{% block body %}
+
+
+
+<div class="container">
+<div align='center' class="main">
+    <hr>
+    <h3>Welcome To  Diabeties Predication </h3><hr>
+    <!-- <P>Please enter the following information</P> -->
+    <div class="container">
+    <form action="result">
+    <table>
+        <tr>
+            <td align="right">Pregnacies:</td>
+            <td align="left"><input type="text" name="n1" placeholder="must be 6-24 "></td>
+        </tr>
+         <tr>
+            <td align="right">Glucode:</td>
+            <td align="left"><input type="text" name="n2" placeholder="must be 70-125 "></td>
+        </tr>
+         <tr>
+            <td align="right">Blood Pressure:</td>
+            <td align="left"><input type="text" name="n3" placeholder="must be less than 120/80 " ></td>
+        </tr>
+         <tr>
+            <td align="right">Skin thickness:</td>
+            <td align="left"><input type="text" name="n4" placeholder="must be 0.6-2.6 "></td>
+        </tr>
+         <tr>
+            <td align="right">Insulin:</td>
+            <td align="left"><input type="text" name="n5" placeholder="must be 718-276 "></td>
+        </tr>
+         <tr>
+            <td align="right">BMI:</td>
+            <td align="left"><input type="text" name="n6" placeholder="must be 18-25 "></td>
+        </tr>
+         <tr>
+            <td align="right">Diabetes pedigree function:</td>
+            <td align="left"><input type="text" name="n7" placeholder="must be 0.1-2.0 "></td>
+        </tr>
+         <tr>
+            <td align="right">Age:</td>
+            <td align="left"><input type="text" name="n8" placeholder="must be 18-80 "></td>
+        </tr>
+    </table>
+        <!-- <input class="btn" type="submit"> -->
+        <button  type="submit" class="button">Submit</button>
+    </form>
+</div>  
+<hr>
+    <span class="result">Result  : {{ result2 }}</span>
+<hr>
+</div>
+</div>
+
+
+{% endblock body %}
